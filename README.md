@@ -1,8 +1,16 @@
-# React + Vite
+# Blog Client
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<p><a href="https://kumang-subba.github.io/blog-client/" target="_blank" rel="noopener noreferrer">View the project here!</a></p>
 
-Currently, two official plugins are available:
+<p> <a href="https://github.com/kumang-subba/Blog-API" target="_blank" rel="noopener noreferrer">Blog API</a></p>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<p><a href="https://github.com/kumang-subba/blog-api-admin" target="_blank" rel="noopener noreferrer">Blog Admin Repo</a></p>
+
+ <h3>Technologies:</h3>
+  <ul>
+  <li>MongoDB</li>
+  <li>Express</li>
+  <li>ReactJS</li>
+  <li>NodeJS</li>
+  <li>PassportJS</li>
+ </ul>
