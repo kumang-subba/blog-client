@@ -4,12 +4,14 @@ export const BlogContext = createContext({});
 
 export const BlogContextProvider = ({ children }) => {
   const [allPosts, setAllPosts] = useState([]);
-
+  const [loading, setLoading] = useState(false);
   const [allComments, setAllComments] = useState([]);
   const fetchAllPosts = async () => {
+    setLoading(true);
     fetch("https://blog-api-poaf.onrender.com/api/posts")
       .then((res) => res.json())
       .then((data) => {
+        setLoading(false);
         if (!data.err) {
           setAllPosts(data.allPosts);
         }
@@ -52,6 +54,7 @@ export const BlogContextProvider = ({ children }) => {
         fetchAllComments,
         allComments,
         setAllComments,
+        loading,
       }}
     >
       {children}
