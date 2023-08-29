@@ -3,14 +3,14 @@ import { Link } from "react-router-dom";
 
 const HomePost = ({ post }) => {
   return (
-    <div className="p-4 w-2/5 shadow-xl border-solid">
-      <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidde w-full">
-        <div className="p-6">
+    <div className="p-4 w-2/5 h-80 shadow-xl border-solid">
+      <div className="h-80 border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden w-full">
+        <div className="p-6 flex flex-col h-full">
           <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
             {post.title}
           </h1>
-          <p className="leading-relaxed mb-3">{post.desc}</p>
-          <div className="flex items-center flex-wrap">
+          <p className="leading-relaxed mb-3 grow">{post.desc}</p>
+          <div className="flex items-center flex-wrap mb-2">
             <Link
               className="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0"
               to={{
